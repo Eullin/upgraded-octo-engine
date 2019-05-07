@@ -11,8 +11,10 @@ class UsedCar extends React.Component {
     } = this.props
     return (
       <Layout>
-        <h2>Autos Certificados</h2>
-        <span>¿No encuentras lo que buscas?</span>
+        <h2 style={{ textAlign: "center" }}>Autos Certificados</h2>
+        <p style={{ textAlign: "center", fontSize: "14px" }}>
+          ¿No encuentras lo que buscas?
+        </p>
         <Button1 />
         <MediaControlCard allPrismicAutosUsados={allPrismicAutosUsados.edges} />
       </Layout>

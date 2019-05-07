@@ -1,5 +1,5 @@
 import React from "react"
-import Footer from "../components/Footer"
+import Footer from "./FooterLinks"
 import ButtonAppBar from "../components/ButtonAppBar"
 
 /* const ListLink = props => (

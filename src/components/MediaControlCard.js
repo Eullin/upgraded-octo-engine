@@ -60,31 +60,6 @@ class MediaControlCard extends React.Component {
   }
 }
 
-/* function MediaControlCard(props) {
-  const { classes, allPrismicAutosUsados } = props
-  console.log("this is", allPrismicAutosUsados)
-  return (
-    <Card className={classes.card}>
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            Modelo
-          </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Millas
-          </Typography>
-        </CardContent>
-      </div>
-      <CardMedia
-        className={classes.cover}
-        image={""}
-        title="Live from space album cover"
-      />
-    </Card>
-  )
-}
-*/
-
 MediaControlCard.propTypes = {
   classes: PropTypes.object.isRequired,
   theme: PropTypes.object.isRequired,
