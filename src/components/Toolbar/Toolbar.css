@@ -45,7 +45,22 @@
   text-shadow: none;
 }
 
-.toolbar_navigation-items a:hover,
-.toolbar_navigation-items a:active {
+.toolbar_navigation_items a:hover,
+.toolbar_navigation_items a:active {
   color: orange;
+}
+
+@media (max-width: 768px) {
+  .toolbar_navigation_items {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .togglebar_toggle-button {
+    display: none;
+  }
+  .toolbar_logo {
+    margin: 0;
+  }
 }

@@ -36,18 +36,18 @@ class App extends React.Component {
   //Commented out so the animation can be implemented also this was removed {sideDrawer}
 
   render() {
-    let sideDrawer
+    //let sideDrawer
     let backdrop
 
     if (this.state.SideDrawerOpen) {
-      sideDrawer = <SideDrawer />
+      //sideDrawer = <SideDrawer />
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
 
     return (
       <div style={{ height: "100%" }}>
         <Toolbar drawerToggleClickHandler={this.drawerToggleClickHandler} />
-        {sideDrawer}
+        <SideDrawer show={this.state.SideDrawerOpen} />
         {backdrop}
         <main style={{ marginTop: "64px" }}>
           <p>Content page</p>
