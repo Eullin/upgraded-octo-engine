@@ -1,29 +1,37 @@
-import React from "react"
+import React, { useContext } from "react"
 import "./Toolbar.css"
 import ToggleButton from "../SideDrawer/DrawerToggleButton"
+import { MenuContext } from "../../context/Menu"
+import SideDrawer from "../SideDrawer/SideDrawer"
+import Backdrop from "../Backdrop/Backdrop"
 
-const toolbar = props => (
-  <header className="toolbar">
-    <nav className="toolbar_navigation">
-      <div className="togglebar_toggle-button">
-        <ToggleButton click={props.drawerToggleClickHandler} />
-      </div>
-      <div className="toolbar_logo">
-        <a href="/">The Logo</a>
-      </div>
-      <div className="spacer" />
-      <div className="toolbar_navigation_items">
-        <ul>
-          <li>
-            <a href="/auto-usado">Test 1</a>
-          </li>
-          <li>
-            <a href="/auto-nuevo">Test 2</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-)
+const toolbar = () => {
+  const { isOpen, closeMenu } = useContext(MenuContext)
+  return (
+    <header className="toolbar">
+      <nav className="toolbar_navigation">
+        <div className="toolbar_logo">
+          <img src="./favicon.ico" />
+        </div>
+        <div className="spacer" />
+        <div className="toolbar_navigation_items">
+          <ul>
+            <li>
+              <a href="/auto-usado">Auto Usado</a>
+            </li>
+            <li>
+              <a href="/auto-nuevo">Auto Nuevo</a>
+            </li>
+          </ul>
+        </div>
+        <SideDrawer show={isOpen} />
+        {isOpen ? <Backdrop click={closeMenu} /> : null}
+        <div className="togglebar_toggle-button">
+          <ToggleButton />
+        </div>
+      </nav>
+    </header>
+  )
+}
 
 export default toolbar

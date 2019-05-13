@@ -1,6 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
+import { MenuContext } from "../../context/Menu"
 import "./Backdrop.css"
 
-const Backdrop = props => <div className="backdrop" onClick={props.click} />
+const Backdrop = () => {
+  const { CloseMenu } = useContext(MenuContext)
+  return <div className="backdrop" onClick={CloseMenu} />
+}
 
 export default Backdrop

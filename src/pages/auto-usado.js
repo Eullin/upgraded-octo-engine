@@ -2,7 +2,7 @@ import React from "React"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import MediaControlCard from "../components/MediaControlCard"
-import Button1 from "../components/Button"
+import Button from "../components/ButtonLink/index"
 
 class UsedCar extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class UsedCar extends React.Component {
         <p style={{ textAlign: "center", fontSize: "14px" }}>
           ¿No encuentras lo que buscas?
         </p>
-        <Button1 />
+        <Button className={"button-link"} to={"/"} text={"Contáctanos"} />
         <MediaControlCard allPrismicAutosUsados={allPrismicAutosUsados.edges} />
       </Layout>
     )

@@ -1,16 +1,9 @@
 import React from "react"
-import Footer from "./FooterLinks"
-import ButtonAppBar from "../components/ButtonAppBar"
-
-/* const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-) */
+import Toolbar from "../components/Toolbar/Toolbar"
 
 export default ({ children }) => (
   <div>
-    <ButtonAppBar />
+    <Toolbar />
     <div
       style={{
         margin: `3rem auto`,
@@ -20,6 +13,5 @@ export default ({ children }) => (
     >
       {children}
     </div>
-    <Footer />
   </div>
 )

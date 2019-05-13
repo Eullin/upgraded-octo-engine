@@ -1,0 +1,28 @@
+.button-link {
+  border: 1px solid #201646;
+  border-radius: 15px;
+  color: #201646;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  text-align: center;
+  padding: 0.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 80%;
+  cursor: pointer;
+}
+.button-link.carousel-item-button {
+  padding: 1rem 5rem;
+}
+@media screen and (max-width: 768px) {
+  .button-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+a.button-link:hover {
+  background-color: #201646;
+  color: white;
+}

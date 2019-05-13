@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./about.module.css"
-import Layout from "../components/Layout"
 
 const User = props => (
   <div className={styles.user}>
@@ -13,18 +12,16 @@ const User = props => (
 )
 
 export default () => (
-  <Layout>
-    <div style={{ color: `blue` }}>
-      <User
-        username="Andres Perez"
-        avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-        excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-      />
-      <User
-        username="Bob Smith"
-        avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
-        excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-      />
-    </div>
-  </Layout>
+  <div style={{ color: `blue` }}>
+    <User
+      username="Andres Perez"
+      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
+      excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    />
+    <User
+      username="Bob Smith"
+      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
+      excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    />
+  </div>
 )

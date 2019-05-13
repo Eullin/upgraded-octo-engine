@@ -1,9 +1,8 @@
 .toolbar {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: purple;
+  background-color: white;
 }
 .spacer {
   flex: 1;
@@ -21,7 +20,7 @@
 }
 
 .toolbar_logo a {
-  color: white;
+  color: #201646;
   text-decoration: none;
   font-size: 1.5rem;
   text-shadow: none;
@@ -40,14 +39,14 @@
 }
 
 .toolbar_navigation_items a {
-  color: white;
+  color: #201646;
   text-decoration: none;
   text-shadow: none;
 }
 
 .toolbar_navigation_items a:hover,
 .toolbar_navigation_items a:active {
-  color: orange;
+  color: #d85c72;
 }
 
 @media (max-width: 768px) {
