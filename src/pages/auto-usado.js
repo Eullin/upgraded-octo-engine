@@ -39,6 +39,13 @@ export const pageQuery = graphql`
             }
             imagen_principal {
               url
+              localFile{
+                childImageSharp{
+                  fluid(maxWidth: 100, quality: 90) {
+                      ...GatsbyImageSharpFluid_withWebp
+                 }
+                }
+              }
             }
           }
         }

@@ -8,7 +8,7 @@ const Container = styled.div`
   position: fixed;
 `
 
-class Card extends Component {
+class Card extends React.Component {
   constructor() {
     super()
 

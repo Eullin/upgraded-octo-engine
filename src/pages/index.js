@@ -5,7 +5,6 @@ import { MenuContext } from "../context/Menu"
 import Button from "../components/ButtonLink/index"
 import Layout from "../components/Layout"
 import styled from "styled-components"
-import SideMenu from "../components/SideMenu/index"
 
 const Container = styled.div`
   display: flex;
@@ -34,7 +33,6 @@ const Index = () => {
           to={"/auto-nuevo/"}
           text={"Auto Nuevo"}
         />
-        <SideMenu />
       </Container>
     </Layout>
   )

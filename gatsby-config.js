@@ -1,15 +1,14 @@
-require("dotenv").config({
+/* require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
+}) */
+require("dotenv").config({
+  path: `.env`,
 })
 
 module.exports = {
   plugins: [
-    /* {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    }, */
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-source-prismic`,
       options: {
@@ -21,25 +20,3 @@ module.exports = {
   ],
 }
 
-/* 
-
-module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
-    {
-      resolve: `gatsby-source-prismic`,
-      options: {
-        repositoryName: `weegot`,
-        accessToken: `${process.env.API_KEY}`,
-        linkResolver: () => post => `/${post.uid}`,
-      },
-    },
-  ],
-}
-
-*/
